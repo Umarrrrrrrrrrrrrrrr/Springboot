@@ -15,8 +15,13 @@ public class SpringbootApplication {
 
         SpringApplication.run(SpringbootApplication.class, args);
     }
-    @GetMapping("/")
+    @GetMapping("/hello")
     public String hello() {
         return "Hello World";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login page";
     }
 }
